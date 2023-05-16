@@ -1,4 +1,4 @@
-from math_function import add
+from math_function import add, reduct, mul, div
 
 def main():
 
@@ -8,6 +8,14 @@ def main():
 
     if operator == "+":
         result = add(data_1, data_2)
+    elif operator == "-":
+        result = reduct(data_1, data_2)
+    elif operator == "*":
+        result = mul(data_1, data_2)
+    elif operator == "/":
+        result = div(data_1, data_2)
+    else:
+        result = print("Sorry there's no function for that character!")
 
     print("{} {} {} = {} ".format(data_1, operator, data_2, result))
 
